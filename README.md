@@ -35,6 +35,9 @@ git config --global user.name "yourUsername"
 git config --global user.email "your@gmail.com"
 git config --global user.password "your personal access token"
 // you can find them in .gitconfig file in the home folder
+git config --global credential.helper store
+git config advice.addIgnoredFile false
+// usefull config to set
 ```
 <s> 5) Step Move the exec to /bin folder </s>
 
