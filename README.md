@@ -32,8 +32,8 @@ g++ -o GitMeOS main.cpp main.h macro.cpp macro.h commmands.cpp commands.h
 4) Step Log in GitHub ... (Hard)
 ```diff
 git config --global user.name "yourUsername"
-git config --global user.email "your@gmail.com"
-git config --global user.password "your personal access token"
+git config --global user.email "your@email.dot"
+git config --global user.password "yourPersonalAccessToken"
 - you can find them in .gitconfig file in the home folder
 git config --global credential.helper store
 git config advice.addIgnoredFile false
