@@ -17,7 +17,7 @@
 ### How to setup GitMe for os2425
 1) Step Clone
 ```diff
-git clone https://github.com/Raven-s-Soul/GitMe
+git clone https://github.com/Raven-s-Soul/GitMe.git
 cd GitMe/GitMe
 ```
 2) Step Edit macro.h
