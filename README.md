@@ -11,6 +11,7 @@
    - `x` delete pannel
    - `"` or `%` add vertical or orizonal pannel
    - `<Any arrow key>` or `o` select pannel
+   - `[` Scrolling mode
    - `?` tmux in console guide
 - **nano** easy text editor `Ctrl + <Key>`
 ### How to setup GitMe for os2425
