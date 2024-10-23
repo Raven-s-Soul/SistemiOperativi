@@ -29,10 +29,27 @@ cd GitMe/GitMe
 // if you have access to CMake or root/sudo use the .sh file from the main folder and your done
 g++ -o GitMeOS main.cpp main.h macro.cpp macro.h commmands.cpp commands.h
 ```
-<s> 4) Step Move the exec to /bin folder </s><br>
-4) use it from home since you got no perms
+4) Step Log in GitHub ... (Hard)
+```c
+git config --global user.name "yourUsername"
+git config --global user.email "your@gmail.com"
+git config --global user.password "your personal access token"
+// you can find them in .gitconfig file in the home folder
+```
+<s> 5) Step Move the exec to /bin folder </s>
+
+5) Step .... use it from home since you got no perms
 ```
 ./GitMeOS ./<whatever>
 // Make sure you got no "/" afer the folder name... the tab usualy add / after
 // At least until GitMe get updated
 ```
+
+[Make your Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) (Actualy mid)
+#### My settings:
+Only select repositories and no expiration date.
+- AttestationsAccess: Read-only
+- Commit statusesAccess: Read and write
+- ContentsAccess: Read and write
+- Merge queuesAccess: Read and write
+- MetadataAccess: Read-only
