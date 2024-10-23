@@ -56,3 +56,7 @@ Only select repositories and no expiration date.
 - ContentsAccess: Read and write
 - Merge queuesAccess: Read and write
 - MetadataAccess: Read-only
+
+***
+
+***<p style="align:center;">MIT License, si estende a tutti branch della repository.</p>***
