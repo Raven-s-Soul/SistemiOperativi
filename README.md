@@ -3,8 +3,19 @@
 >- Utilizzo [tmux](https://github.com/tmux/tmux) come multiplexer per comodità.
 >- Utilizzo [GitMe](https://github.com/Raven-s-Soul/GitMe). 
 ### Cheat Sheet:
->- docker exec -it os2425 bash
->   - Add a new terminal in the same docker instance
+
+<details>
+<summary><b>docker</b></summary><br>
+
+>| Comando | spiegazione |
+>| :--: | :-- |
+>| docker exec -it os2425 bash | Add a new terminal in the same docker instance |
+>| docker container start os2425 | Start os2425 |
+>| docker container attach os2425 | Attach to os2425 |
+</details>
+
+<details>
+<summary><b>tmux</b></summary><br>
 
 >- My usualy **tmux comodity commads**, `Ctrl + b` followed by:
 >  
@@ -17,8 +28,9 @@
 >| `<Any arrow key>` or `o` | select pannel |
 >| `[` | Scrolling mode |
 >| `?` | tmux in console guide |
+</details>
 
->- **nano** easy text editor `Ctrl + <Key>`
+> **nano** easy text editor `Ctrl + <Key>`
 
 <details>
 <summary>
