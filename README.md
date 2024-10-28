@@ -86,4 +86,40 @@
 
 ***
 
+>| Comando | spiegazione |
+>| :--: | :-- |
+>| `sudo` | esegui come amministratore |
+>| `I` | pipe operatore <br> output @1 è input @2 |
+>| `>` | scrivi dentro @ <br> ls > ls.txt |
+>| `>>` | scrivi infondo dentro @ <br>  ls >> ls.txt  |
+>| `pwd` | mostra la directory |
+>| `nano` | text editor |
+>| `watch ps` | track process |
+>| `man @1 @2` | manuale, @1 index del manuale, @2 argomento cercato |
+>| `ls` + `-a` | mostra i file, -a anche i file nascosti |
+>| `clear` | pulisce il terminale |
+>| `cd `| muoviti in a directory, ./ = here .. / = parent |
+>| `cat @` | leggi file |
+>| `less @`| leggi file poco |
+>| `more @`| leggi file di più|
+>|`tail`| leggi fondo file|
+>|`touch`| crea un file |
+>| `mkdir @`| crea cartella @ |
+>| `rm -@ @`| rimuovi @, se directory -r |
+>| `cp @1 @2`| copia @1 in @2 |
+>| `mv @1 @2`| muovi @1 in @2 |
+>|`tree`| mostra la directory tree|
+>|`top`| mostra informazioni generali |
+>|`htop`| top con gli steroidi |
+
+<!--
+| A | B |
+| `###` | ### <br> <details> <summary>Example: </summary><br> ### </details> |
+
+Todo
+journal
+-->
+
+***
+
 ***<p style="align:center;">MIT License, si estende a tutti branch della repository.</p>***
