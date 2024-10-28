@@ -4,9 +4,9 @@
 >- Utilizzo [GitMe](https://github.com/Raven-s-Soul/GitMe). 
 
 <details>
-<summary>Cheat Sheet</summary><br>
+<summary><b>Cheat Sheet</b></summary><br>
 <details>
-<summary><b>docker</b></summary><br>
+<summary>docker</summary><br>
 
 >| Comando | spiegazione |
 >| :--: | :-- |
@@ -16,7 +16,7 @@
 </details>
 
 <details>
-<summary><b>tmux</b></summary><br>
+<summary>tmux</summary><br>
 
 >- My usualy **tmux comodity commads**, `Ctrl + b` followed by:
 >  
@@ -34,9 +34,7 @@
 > **nano** easy text editor `Ctrl + <Key>`
 
 <details>
-<summary>
-<b>How to setup GitMe for os2425</b>
-</summary><br>
+<summary>How to setup GitMe for os2425</summary><br>
   
 >1) Step Clone
 >```diff
@@ -74,9 +72,7 @@
 >[Make your Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) (Actualy mid)
 >
 ><details>
-><summary>
-><b>My settings</b> 
-></summary><br>
+><summary>My settings</summary><br>
 >   
 >>Only select repositories and no expiration date.
 >>- AttestationsAccess: Read-only
