@@ -2,8 +2,9 @@
 ### Tools:
 >- Utilizzo [tmux](https://github.com/tmux/tmux) come multiplexer per comodità.
 >- Utilizzo [GitMe](https://github.com/Raven-s-Soul/GitMe). 
-### Cheat Sheet:
 
+<details>
+<summary>Cheat Sheet</summary><br>
 <details>
 <summary><b>docker</b></summary><br>
 
@@ -83,8 +84,9 @@
 >>- ContentsAccess: Read and write
 >>- Merge queuesAccess: Read and write
 >>- MetadataAccess: Read-only
-></details>
-</details>
+></details> <!-- My Settings  -->
+</details> <!-- GitMe  -->
+</details> <!-- Cheat Sheet  -->
 
 ***
 
