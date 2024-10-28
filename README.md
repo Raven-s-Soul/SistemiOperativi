@@ -33,6 +33,10 @@
 
 > **nano** easy text editor `Ctrl + <Key>`
 
+> `Ctrl + c` break process
+> 
+> `Ctrl + l` clear console 
+
 <details>
 <summary>How to setup GitMe for os2425</summary><br>
   
