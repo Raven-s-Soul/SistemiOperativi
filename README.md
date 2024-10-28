@@ -111,6 +111,7 @@
 >|`tree`| mostra la directory tree|
 >|`top`| mostra informazioni generali |
 >|`htop`| top con gli steroidi |
+>| `echo @` | scrivi in console @ |
 
 <!--
 | A | B |
