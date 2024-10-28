@@ -1,19 +1,25 @@
 ## Sistemi Operativi
 ### Tools:
-- Utilizzo [tmux](https://github.com/tmux/tmux) come multiplexer per comodità.
-- Utilizzo [GitMe](https://github.com/Raven-s-Soul/GitMe). 
+>- Utilizzo [tmux](https://github.com/tmux/tmux) come multiplexer per comodità.
+>- Utilizzo [GitMe](https://github.com/Raven-s-Soul/GitMe). 
 ### Cheat Sheet:
-- docker exec -it os2425 bash
-   - Add a new terminal in the same docker instance
-- My usualy **tmux comodity commads**, `Ctrl + b` followed by:
-   - `w` select window
-   - `c` new window
-   - `x` delete pannel
-   - `"` or `%` add vertical or orizonal pannel
-   - `<Any arrow key>` or `o` select pannel
-   - `[` Scrolling mode
-   - `?` tmux in console guide
-- **nano** easy text editor `Ctrl + <Key>`
+>- docker exec -it os2425 bash
+>   - Add a new terminal in the same docker instance
+
+>- My usualy **tmux comodity commads**, `Ctrl + b` followed by:
+>  
+>| Key | spiegazione |
+>| :--: | :-- |  
+>| `w` | select window |
+>| `c` | new window |
+>| `x` | delete pannel |
+>| `"` or `%` | add vertical or orizonal pannel |
+>| `<Any arrow key>` or `o` | select pannel |
+>| `[` | Scrolling mode |
+>| `?` | tmux in console guide |
+
+>- **nano** easy text editor `Ctrl + <Key>`
+
 ### How to setup GitMe for os2425
 1) Step Clone
 ```diff
@@ -49,13 +55,19 @@ git config advice.addIgnoredFile false
 ```
 
 [Make your Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) (Actualy mid)
-#### My settings:
-Only select repositories and no expiration date.
-- AttestationsAccess: Read-only
-- Commit statusesAccess: Read and write
-- ContentsAccess: Read and write
-- Merge queuesAccess: Read and write
-- MetadataAccess: Read-only
+
+<details>
+<summary>
+<b>My settings</b> 
+</summary><br>
+   
+>Only select repositories and no expiration date.
+>- AttestationsAccess: Read-only
+>- Commit statusesAccess: Read and write
+>- ContentsAccess: Read and write
+>- Merge queuesAccess: Read and write
+>- MetadataAccess: Read-only
+</details>
 
 ***
 
