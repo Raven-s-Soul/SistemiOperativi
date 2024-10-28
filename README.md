@@ -20,7 +20,11 @@
 
 >- **nano** easy text editor `Ctrl + <Key>`
 
-### How to setup GitMe for os2425
+<details>
+<summary>
+<b>How to setup GitMe for os2425</b>
+</summary><br>
+  
 >1) Step Clone
 >```diff
 >git clone https://github.com/Raven-s-Soul/GitMe.git
@@ -68,6 +72,7 @@
 >>- Merge queuesAccess: Read and write
 >>- MetadataAccess: Read-only
 ></details>
+</details>
 
 ***
 
