@@ -84,19 +84,32 @@ void fillQueue(){
 		//coda.array[i] = i;
 }
 
+// Testing
 void clearQueue(){
 	for(int i = 0; i< MaxCoda; i++)
 		Dequeue();
 }
 
 // Produttore
+void *Produttore(void *arg){
+	while(1){
+	
+	}
+}
+
 // Consumatore
+void *Consumatore(void *arg){
+	while(1){
+	
+	}
+}
+
 
 int main(){
+	initQueue();
 	// Queue Tests
 	/*
 	{
-		initQueue();
 		fillQueue();
 		LOG("Filled")
 		printQueue();
@@ -111,6 +124,10 @@ int main(){
 		printQueue();
 	}
 	*/
-
+	pthread_t c,p;
+	pthread_create(&c , NULL , Consumatore, NULL);
+	pthread_create(&p , NULL , Produttore , NULL);
+	pthread_join(c, NULL);
+	pthread_join(p, NULL);
 	return 0;
 }
