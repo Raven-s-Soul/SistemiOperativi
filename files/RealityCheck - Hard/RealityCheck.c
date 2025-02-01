@@ -17,10 +17,10 @@ int dimensione(int fd){
         char c;
         int i = 1;
         int dim=0;
-        while(i > 0){
-                i=read(fd,&c,sizeof(char));
+        while ((i = read(fd, &c, sizeof(char))) > 0) {
+                //i=read(fd,&c,sizeof(char));
                 LOG("Byte letti %d",i)
-		dim=dim+1;
+		dim++;
         }
         return dim;
 }
@@ -46,11 +46,11 @@ void copy(char* s, char* d){
         //calcolo dimensione del file sorgente
         int dim=dimensione(fds);
         //char *appoggio=(char*)malloc(dim);
-        char appoggio[dim];
+        char appoggio[dim+1];
         lseek(fds,0,SEEK_SET);
         read(fds,appoggio,dim*sizeof(char));
 	// Clean Garbage
-	appoggio[dim-1] = '\0';
+	appoggio[dim] = '\0';
         printf("%s: %s", s , appoggio);
 	int t = write(fdd,appoggio,dim*sizeof(char));
         //LOG("Totali: %d usati %d",dim, t)
