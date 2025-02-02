@@ -19,14 +19,6 @@
 >+ close(file);
 >```
 ```c
-int dimensione(int fd){
-        char c;
-        int i = 1;
-        int dim=0;
-        while ((i = read(fd, &c, sizeof(char))) > 0)
-            dim++; //LOG("Byte letti %d",i)
-        return dim;
-}
         ...
         int fileReadONLY=open(filename, O_APPEND | O_RDONLY,S_IRWXU);
         lseek(fileReadONLY,0,SEEK_SET);
@@ -42,6 +34,20 @@ int dimensione(int fd){
         close(fileReadONLY);
         close(fileRDWR);
         ...
+// Alternative
+int dimensione(int fd){
+        char c;
+        int i = 1;
+        int dim=0;
+        while ((i = read(fd, &c, sizeof(char))) > 0)
+            dim++; //LOG("Byte letti %d",i)
+        return dim;
+}
+int dimensione(int fd){
+    struct stat buffer;
+    fstat(fd, &buffer);
+    return buffer.st_size;
+}
 ```
 ***
 ## Fork
