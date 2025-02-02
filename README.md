@@ -29,9 +29,9 @@ int dimensione(int fd){
 }
         ...
         int fileReadONLY=open(filename, O_APPEND | O_RDONLY,S_IRWXU);
-        lseek(file,0,SEEK_SET);
+        lseek(fileReadONLY,0,SEEK_SET);
         int fileRDWR=open(filename2, O_CREAT | O_TRUNC | O_RDWR,S_IRWXU | S_IRWXO | S_IRGRP | S_IWOTH);
-        int dim=dimensione(fds);
+        int dim=dimensione(fileReadONLY);
         char appoggio[dim+1];
         lseek(fileReadONLY,0,SEEK_SET);
         read(fileReadONLY,appoggio,dim*sizeof(char));
@@ -39,8 +39,8 @@ int dimensione(int fd){
         write(fileRDWR,appoggio,dim*sizeof(char));
         lseek(fileRDWR,0,SEEK_SET);
         read(fileRDWR,appoggio,dim);
-        close(fds);
-        close(fdd);
+        close(fileReadONLY);
+        close(fileRDWR);
         ...
 ```
 ***
@@ -208,8 +208,8 @@ int main(int argc, char *argv[]) {
 #include <stdio.h>
 #include <pthread.h>
 
-int mails = 0;
-pthread_mutex_t mutex;
+volatile int mails = 0;
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 
 void* routine() {
     for (int i = 0; i < 10000000; i++) {
@@ -217,15 +217,16 @@ void* routine() {
         mails++;
         pthread_mutex_unlock(&mutex);
     }
+    return NULL;
 }
 
 int main(int argc, char* argv[]) {
     pthread_t p1, p2;
     pthread_mutex_init(&mutex, NULL);
-    pthread_create(&p1, NULL, &routine, NULL)
-    pthread_create(&p2, NULL, &routine, NULL)
-    pthread_join(p1, NULL)
-    pthread_join(p2, NULL)
+    pthread_create(&p1, NULL, &routine, NULL);
+    pthread_create(&p2, NULL, &routine, NULL);
+    pthread_join(p1, NULL);
+    pthread_join(p2, NULL);
     pthread_mutex_destroy(&mutex);
     printf("Number of mails: %d\n", mails);
     return 0;
