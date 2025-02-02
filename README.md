@@ -231,3 +231,6 @@ int main(int argc, char* argv[]) {
     return 0;
 }
 ```
+
+***
+***<p style="align:center;">MIT License, si estende a tutti branch della repository.</p>***
