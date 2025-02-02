@@ -100,6 +100,7 @@
 >| `nano` | text editor |
 >| `watch ps` | track process |
 >| `man @1 @2` | manuale, @1 index del manuale, @2 argomento cercato |
+>| -> `/@` | dentro il manuale cerca @, `n` avanti `N` indietro |
 >| `ls` + `-a` | mostra i file, -a anche i file nascosti |
 >| `clear` | pulisce il terminale |
 >| `cd `| muoviti in a directory, ./ = here .. / = parent |
@@ -116,6 +117,7 @@
 >|`top`| mostra informazioni generali |
 >|`htop`| top con gli steroidi |
 >| `echo @` | scrivi in console @ |
+>| `apropos "@"` | mostra una lista di manuali che hanno a che fare con @ |
 
 <!--
 | A | B |
