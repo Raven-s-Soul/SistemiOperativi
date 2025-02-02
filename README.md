@@ -43,6 +43,7 @@ int dimensione(int fd){
             dim++; //LOG("Byte letti %d",i)
         return dim;
 }
+#include <sys_stat.h>
 int dimensione(int fd){
     struct stat buffer;
     fstat(fd, &buffer);
