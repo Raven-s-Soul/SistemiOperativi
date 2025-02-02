@@ -2,12 +2,12 @@
 > [!NOTE]
 >Semplici esempi.
 >- Usate `apropos @pattern` e `man @pattern`.
->>- [Files]
->>- Fork
->>- Execvp
->>- Pthread.h
->>- Semaphore.h
->>- Mutex - lock
+>>- [Files](README.md#files)
+>>- [Fork](README.md#fork)
+>>- [Execvp](README.md#execvp)
+>>- [Pthread.h](README.md#pthreadh)
+>>- [Semaphore.h](README.md#semaphoreh)
+>>- [Mutex - lock](README.md#Mutex---lock)
 ***
 ## Files
 >[!TIP]
