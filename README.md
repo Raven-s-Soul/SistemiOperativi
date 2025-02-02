@@ -2,8 +2,56 @@
 > [!NOTE]
 >Semplici esempi.
 >- Usate `apropos @pattern` e `man @pattern`.
+>>- [Files]
+>>- Fork
+>>- Execvp
+>>- Pthread.h
+>>- Semaphore.h
+>>- Mutex - lock
+***
+## Files
+>[!TIP]
+>```diff
+>+ int file = open("filename", @Flags , @Mode);
+>+ lseek(file, 0 /*offset*/ , SEEK_SET);
+>+ read(file, &char, sizeof(char));
+>+ write(file, buffer, dim*sizeof(char));
+>+ close(file);
+>```
+```c
+int dimensione(int fd){
+        char c;
+        int i = 1;
+        int dim=0;
+        while ((i = read(fd, &c, sizeof(char))) > 0)
+            dim++; //LOG("Byte letti %d",i)
+        return dim;
+}
+        ...
+        int fileReadONLY=open(filename, O_APPEND | O_RDONLY,S_IRWXU);
+        lseek(file,0,SEEK_SET);
+        int fileRDWR=open(filename2, O_CREAT | O_TRUNC | O_RDWR,S_IRWXU | S_IRWXO | S_IRGRP | S_IWOTH);
+        int dim=dimensione(fds);
+        char appoggio[dim+1];
+        lseek(fileReadONLY,0,SEEK_SET);
+        read(fileReadONLY,appoggio,dim*sizeof(char));
+        appoggio[dim] = '\0'; // Garbage
+        write(fileRDWR,appoggio,dim*sizeof(char));
+        lseek(fileRDWR,0,SEEK_SET);
+        read(fileRDWR,appoggio,dim);
+        close(fds);
+        close(fdd);
+        ...
+```
 ***
 ## Fork
+>[!TIP]
+>```diff
+>```
+```c
+```
+***
+## Execvp
 >[!TIP]
 >```diff
 >```
@@ -110,6 +158,7 @@ int main(int argc, char *argv[]) {
 ## Mutex - lock
 >[!TIP]
 >```diff
+>+ #include <pthread.h>
 >+ pthread_mutex_t mutex;
 >+ pthread_mutex_lock(&mutex);
 >+ pthread_mutex_unlock(&mutex);
