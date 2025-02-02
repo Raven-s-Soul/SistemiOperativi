@@ -142,10 +142,11 @@ int main(int argc, char *argv[]) {
 >[!TIP]
 >```diff
 >+ #include <semaphore.h>
+>+ sem_t semaphore;
 >+ sem_wait(&semaphore);
 >+ sem_post(&semaphore);
 >+ sem_init(&semaphore, 0, 2);
->// &arg, (0 generale, != 0 usato con fork), @MaxConcorrenti
+>- sem_init(&arg, (0 generale, != 0 usato con fork), @MaxConcorrenti)
 >+ sem_destroy(&semaphore);
 >```
 ```c
