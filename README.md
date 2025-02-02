@@ -47,15 +47,53 @@ int dimensione(int fd){
 ## Fork
 >[!TIP]
 >```diff
+>+ #include <unistd.h>
+>+ int rc = fork();
+>- rc < 0  // fork failed exit(1)
+>- rc == 0 // child (new process)
+>+ (int) getpid()  // your id
+>+ (int) getppid() // parent id
+>- int wc = wait(NULL); // join thread
+>- #include <sys/wait.h>
+>- sleep(1);
 >```
 ```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main(int argc, char *argv[]){
+    printf("hello world (pid:%d)\n", (int) getpid());
+    int rc = fork();
+    if (rc < 0) {        // fork failed; exit
+        fprintf(stderr, "fork failed\n");
+        exit(1);
+    } else if (rc == 0){ // child (new process)
+        printf("hello, I am child (pid:%d)\n", (int) getpid());
+    } else {        // parent goes down this path (original process)
+        printf("hello, I am parent of %d (pid:%d)\n", rc, (int) getpid());
+    }
+    return 0;
+}
 ```
 ***
 ## Execvp
 >[!TIP]
 >```diff
+>+ #include <unistd.h>
+>+ char *myargs[n]; // last has to be NULL
+>+ execvp(myargs[0], myargs);
 >```
 ```c
+// Extra redirect standard output to a file
+// close(STDOUT_FILENO);
+// open("./output", O_CREAT|O_WRONLY|O_TRUNC, S_IRWXU);
+char *myargs[3];
+myargs[0] = strdup("wc");   // program: "wc" (word count)
+myargs[1] = strdup("p3.c"); // argument: file to count
+myargs[2] = NULL;           // marks end of array
+execvp(myargs[0], myargs);  // runs word count
+// Everything after will not be done.
 ```
 ***
 ## Pthread.h
