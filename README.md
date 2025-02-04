@@ -1,6 +1,6 @@
 ## Sistemi Operativi
 > [!IMPORTANT]
-> **[Coding for OS - (Exam)](./tree/c_files)**
+> **[Coding for OS - (Exam)](../../tree/c_files)**
 
 > [!TIP]
 >### Tools:
