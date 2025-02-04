@@ -1,0 +1,7 @@
+Implementa un programma che riceva per argomento quattro numeri interi e che avvii quattro thread, ognuno dei quali effettuer un test di primalit su uno dei numeri ricevuti per argomento. Ognuno di questi thread, se il numero in input stato verificato essere primo, aggiorner una variabile globale condivisa in modo tale che quest'ultima contenga, al termine dell'esecuzione dei quattro thread, il valore del primo maggiore. Il thread principale, dopo aver atteso la terminazione dei quattro thread, stamper   a video il valore della variabile globale precedentemente introdotta.
+
+Suggerimenti:
+- Utilizzare un algoritmo semplice per effettuare il test di primalit.
+Ad esempio, sufficiente verificare la divisibilit intera per tutti gli interi a partire da 2 alla radice quadrata del numero da testare. Se il numero da testare risulta divisibile per uno di questi numeri, allora non primo.
+- E' possibile convertire a interi i numeri in formato stringa passati come argomento utilizzando la funzione atoi() - man atoi per maggiori informazioni.
+- Se si usa sqrt() da math.h necessario utilizzare l'opzione -lm sulla riga di comando di gcc
