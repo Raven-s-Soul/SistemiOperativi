@@ -1,6 +1,10 @@
 ## Sistemi Operativi
 > [!IMPORTANT]
-> **[Coding for OS - (Exam)](../../tree/c_files)**
+> - **[Coding for OS - (Exam)](../../tree/c_files)**
+>> ### Teoria
+>> - Processi e Scheduling
+>> - Gestione della Memoria
+>> - Programmazione Concorrente
 
 > [!TIP]
 >### Tools:
