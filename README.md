@@ -137,4 +137,4 @@ journal
 
 ***
 
-***<p style="align:center;">MIT License, si estende a tutti branch della repository.</p>***
+***<p style="align:center;">TUTTI I DIRITTI RISERVATI, si estende a tutti branch della repository.</p>***
